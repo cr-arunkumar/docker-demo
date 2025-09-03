@@ -25,7 +25,7 @@ COPY tsconfig*.json ./
 COPY nest-cli.json ./
 
 # Expose port
-EXPOSE 3000
+EXPOSE ${PORT:-3001}
 
 # Start in development mode with hot reload
 CMD ["pnpm", "run", "start:dev"]

@@ -19,6 +19,11 @@ export class AppController {
       timestamp: new Date().toISOString(),
       environment: process.env.NODE_ENV,
       version: '1.0.0',
-    }
+      uptime: process.uptime(),
+      memoryUsage: process.memoryUsage(),
+      pid: process.pid,
+      pwd: process.cwd(),
+      cwd: process.cwd(),
+    };
   }
 }
