@@ -3,6 +3,8 @@
 /node_modules
 /build
 bundle
+.env.prod
+.env.dev
 
 # Logs
 logs
